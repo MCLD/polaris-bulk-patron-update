@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Authors>Maricopa County Library District Web Team</Authors>
+    <Company>Maricopa County Library District</Company>
+    <Copyright>Copyright (c) 2023 Maricopa County Library District</Copyright>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Description>Bulk update Polaris ILS patrons via the Polaris API from a CSV file</Description>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <ProjectUrl>https://github.com/MCLD/polaris-bulk-patron-update</ProjectUrl>
+    <PublishSingleFile>true</PublishSingleFile>
+    <RepositoryUrl>https://github.com/MCLD/polaris-bulk-patron-update</RepositoryUrl>
+    <SelfContained>true</SelfContained>
+    <TargetFramework>net8.0</TargetFramework>
+    <Title>Polaris Bulk Patron Update</Title>
+    <UserSecretsId>74967864-76b1-4864-bf4c-e7e2eca9b1c3</UserSecretsId>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Clc.Polaris.Api" Version="3.1.6" />
+    <PackageReference Include="CsvHelper" Version="33.1.0" />
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="10.0.1" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="10.0.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="10.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="9.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

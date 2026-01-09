@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolarisBulkPatronUpdate", "PolarisBulkPatronUpdate\PolarisBulkPatronUpdate.csproj", "{1A38205A-289C-43D5-A647-75AE03D1E39F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1E3F9EB8-D190-4C13-837B-6D8ADCE1899B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		PolarisBulkPatronUpdate\appsettings.json = PolarisBulkPatronUpdate\appsettings.json
+		build-binaries.bash = build-binaries.bash
+		build.bash = build.bash
+		CHANGELOG.md = CHANGELOG.md
+		.github\workflows\ci.yml = .github\workflows\ci.yml
+		.github\workflows\cr-cleanup.yml = .github\workflows\cr-cleanup.yml
+		.github\workflows\docker-lock-verify.yml = .github\workflows\docker-lock-verify.yml
+		Dockerfile = Dockerfile
+		.github\workflows\dotnet-outdated.yml = .github\workflows\dotnet-outdated.yml
+		LICENSE = LICENSE
+		README.md = README.md
+		release-publish.bash = release-publish.bash
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A38205A-289C-43D5-A647-75AE03D1E39F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A38205A-289C-43D5-A647-75AE03D1E39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A38205A-289C-43D5-A647-75AE03D1E39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A38205A-289C-43D5-A647-75AE03D1E39F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E675DDE6-6E45-4E30-8570-F5E5B0767AB3}
+	EndGlobalSection
+EndGlobal

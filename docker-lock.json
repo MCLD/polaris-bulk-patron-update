@@ -1,0 +1,16 @@
+{
+	"dockerfiles": {
+		"Dockerfile": [
+			{
+				"name": "mcr.microsoft.com/dotnet/sdk",
+				"tag": "8.0",
+				"digest": "a87db299d259cec53210df406cd5e51f900a0c6d938fe56d5f392629c0505d75"
+			},
+			{
+				"name": "mcr.microsoft.com/dotnet/runtime",
+				"tag": "8.0",
+				"digest": "40e24d28590d355e21a9923a9304a38da1a255d32edf7a5b3d54ec43b3e20637"
+			}
+		]
+	}
+}
