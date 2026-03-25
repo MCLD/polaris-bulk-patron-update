@@ -1,6 +1,8 @@
 # Polaris Bulk Patron Update
 
-Provided a CSV file of barcodes and fields this command line application will apply updates to patrons in Polaris via the Polaris API.
+The [Polaris Bulk Patron Update](https://github.com/MCLD/polaris-bulk-patron-update) command line
+application will apply updates to patrons from a CSV file to the 
+[Polaris ILS](https://iii.com/products/polaris-ils/) using the Polaris API.
 
 ## Caution
 
@@ -26,6 +28,17 @@ Configure the Polaris API settings here and provide a privileged user's authenti
         "Password": "",
         "Username": ""
 }
+```
+
+Alternately, you can provide configuration via the enviroinment (e.g. when running from Docker):
+
+```sh
+PapiSettings__AccessID=
+PapiSettings__AccessKey=
+PapiSettings__Hostname=
+PapiSettings__PolarisOverrideAccount__Domain=
+PapiSettings__PolarisOverrideAccount__Password=
+PapiSettings__PolarisOverrideAccount__Username=
 ```
 
 ### Command line options
@@ -67,7 +80,8 @@ Barcode,User5
 
 ## Logging
 
-By default the code logs to the console, for more elaborate logging please see [Serilog.Settings.Configuration](https://github.com/serilog/serilog-settings-configuration).
+By default the code logs to the console, for more elaborate logging please see 
+[Serilog.Settings.Configuration](https://github.com/serilog/serilog-settings-configuration).
 
 When running from the console, customize the `Serilog` section in `appsettings.json`, for example:
 
@@ -88,8 +102,14 @@ Serilog__WriteTo__0__Args__serverUrl=http://seq:5341
 
 ## Credits
 
-This application relies on the [Clc.Polaris.Api](https://www.nuget.org/packages/Clc.Polaris.Api/), created and maintained by the [Central Library Consortium](https://clcohio.org/).
+This application relies on:
+
+- [Clc.Polaris.Api](https://www.nuget.org/packages/Clc.Polaris.Api/), created and maintained by the [Central Library Consortium](https://clcohio.org/).
+- [CsvHelper](https://joshclose.github.io/CsvHelper/)
+- [natemcmaster/CommandLineUtils](https://github.com/natemcmaster/CommandLineUtils)
+- [Serilog](https://serilog.net/)
 
 ## License
 
-Polaris Bulk Patron Update source code is Copyright 2023 by the Maricopa County Library District and is distributed under [The MIT License](http://opensource.org/licenses/MIT).
+Polaris Bulk Patron Update source code is Copyright 2023 by the Maricopa County Library District and
+is distributed under [The MIT License](http://opensource.org/licenses/MIT).

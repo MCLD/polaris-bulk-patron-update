@@ -11,4 +11,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything, initial release
 
-[1.0.0]: https://github.com/MCLD/PolarisBulkPatronUpdate/tree/v1.0.0
+[1.0.0]: https://github.com/MCLD/polaris-bulk-patron-update/tree/v1.0.0
