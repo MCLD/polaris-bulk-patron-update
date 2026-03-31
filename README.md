@@ -1,7 +1,8 @@
 # Polaris Bulk Patron Update
 
-The [Polaris Bulk Patron Update](https://github.com/MCLD/polaris-bulk-patron-update) command line
-application will apply updates to patrons from a CSV file to the 
+The [Polaris Bulk Patron Update](https://github.com/MCLD/polaris-bulk-patron-update)
+([mirror](https://codeberg.org/MCLD/polaris-bulk-patron-update)) command line application will
+apply updates to patrons from a CSV file to the 
 [Polaris ILS](https://iii.com/products/polaris-ils/) using the Polaris API.
 
 ## Caution
